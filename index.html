@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     PORTAFOLIO DE CREDENCIALES — Axel Bello Martínez
+     Archivo único autocontenido. Sin dependencias externas.
+     PARA PUBLICAR: sustituye cada marcador entre corchetes
+     (por ejemplo [URL_VERIFICACION_QGIS_AVANZADO]) por la URL real.
+     La lista completa de marcadores está en checklist.md.
+     ============================================================ -->
+
+<title>Axel Bello Martínez — Licenciado en Geografía | Portafolio de Credenciales</title>
+<meta name="description" content="Portafolio profesional de Axel Bello Martínez, Licenciado en Geografía por la Universidad de La Habana. SIG, teledetección, análisis geoespacial, cartografía y ciencias ambientales. Cursos, postgrados, eventos científicos y credenciales verificables.">
+<meta name="author" content="Axel Bello Martínez">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14535E">
+<meta name="keywords" content="Axel Bello Martínez, geografía, SIG, QGIS, ArcGIS, teledetección, análisis geoespacial, cartografía, medio ambiente, La Habana, Cuba">
+
+<!-- SEO / redes sociales. Sustituye [URL_PUBLICA_DEL_PORTAFOLIO] al publicar. -->
+<link rel="canonical" href="[URL_PUBLICA_DEL_PORTAFOLIO]">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Axel Bello Martínez — Licenciado en Geografía">
+<meta property="og:description" content="Portafolio de credenciales: SIG, teledetección, análisis geoespacial y ciencias ambientales.">
+<meta property="og:url" content="[URL_PUBLICA_DEL_PORTAFOLIO]">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Axel Bello Martínez — Licenciado en Geografía">
+<meta name="twitter:description" content="Portafolio de credenciales: SIG, teledetección, análisis geoespacial y ciencias ambientales.">
+
+<!-- Favicon opcional, incrustado (sin archivo externo) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314535E'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23F7F5F0' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
+
+<style>
+/* ------------------------------------------------------------
+   1. Tokens de diseño
+   ------------------------------------------------------------ */
+:root{
+  --ink:#1B2326;
+  --ink-soft:#4C5A5F;
+  --ink-mute:#6C787C;
+  --paper:#FBF9F5;
+  --card:#FFFFFF;
+  --accent:#14535E;
+  --accent-soft:#3C7A83;
+  --accent-wash:#EDF3F3;
+  --line:#DFE4E4;
+  --line-soft:#EDEFEF;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(20,40,45,.04), 0 8px 24px rgba(20,40,45,.06);
+  --shadow-hover:0 2px 4px rgba(20,40,45,.06), 0 14px 34px rgba(20,40,45,.10);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --max:1080px;
+}
+
+/* ------------------------------------------------------------
+   2. Reset y base
+   ------------------------------------------------------------ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(1rem,.96rem + .2vw,1.0625rem);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.2;letter-spacing:-.01em;margin:0}
+p{margin:0 0 1rem}
+ul,ol{margin:0;padding:0;list-style:none}
+a{color:var(--accent);text-decoration:none;text-underline-offset:.18em}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{
+  outline:3px solid var(--accent-soft);
+  outline-offset:3px;
+  border-radius:4px;
+}
+img,svg{max-width:100%;display:block}
+strong{font-weight:650}
+
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2.5rem)}
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* Enlace de salto para lectores de pantalla y teclado */
+.skip{
+  position:absolute;left:1rem;top:-4rem;z-index:100;
+  background:var(--accent);color:#fff;padding:.7rem 1.1rem;
+  border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:600;
+  transition:top .18s ease;
+}
+.skip:focus{top:0;text-decoration:none}
+
+/* ------------------------------------------------------------
+   3. Cabecera
+   ------------------------------------------------------------ */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(120% 90% at 12% 0%, #FFFFFF 0%, rgba(255,255,255,0) 58%),
+    linear-gradient(180deg,#F4F1EA 0%, var(--paper) 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:5px;
+  background:linear-gradient(90deg,var(--accent) 0%,var(--accent-soft) 55%,#B9CFD0 100%);
+}
+.hero-inner{padding-block:clamp(2.6rem,6vw,4.6rem) clamp(2rem,4vw,3.2rem)}
+.eyebrow{
+  font-family:var(--sans);font-size:.75rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent-soft);
+  margin:0 0 1rem;
+}
+.hero h1{
+  font-size:clamp(2.15rem,1.5rem + 3.2vw,3.7rem);
+  letter-spacing:-.022em;margin:0 0 .35rem;
+}
+.role{
+  font-family:var(--serif);font-size:clamp(1.15rem,1rem + .8vw,1.55rem);
+  color:var(--accent);margin:0 0 1.15rem;
+}
+.tagline{
+  font-size:clamp(1.02rem,.98rem + .3vw,1.18rem);
+  color:var(--ink-soft);max-width:62ch;margin:0 0 1.9rem;
+}
+
+/* Datos de contacto en cabecera */
+.meta-list{
+  display:flex;flex-wrap:wrap;gap:.55rem 1.35rem;
+  margin:0 0 1.6rem;font-size:.95rem;color:var(--ink-soft);
+}
+.meta-list li{display:flex;align-items:center;gap:.5rem}
+.meta-list svg{width:1.05em;height:1.05em;flex:none;color:var(--accent-soft)}
+.meta-list a{color:var(--ink-soft)}
+.meta-list a:hover{color:var(--accent)}
+
+/* Acciones de cabecera */
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.5rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:var(--sans);font-size:.94rem;font-weight:650;
+  padding:.72rem 1.25rem;border-radius:999px;border:1px solid transparent;
+  cursor:pointer;transition:transform .16s ease,background-color .16s ease,border-color .16s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#0F424B}
+.btn-ghost{background:transparent;color:var(--accent);border-color:#C3D3D4}
+.btn-ghost:hover{background:var(--accent-wash);border-color:var(--accent-soft)}
+
+/* Perfiles académicos y de código */
+.profiles{display:flex;flex-wrap:wrap;gap:.5rem;margin:0}
+.profiles a{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.85rem;font-weight:600;color:var(--accent);
+  background:#fff;border:1px solid var(--line);
+  padding:.42rem .85rem;border-radius:999px;
+}
+.profiles a:hover{border-color:var(--accent-soft);text-decoration:none;background:var(--accent-wash)}
+.profiles svg{width:1em;height:1em}
+
+/* ------------------------------------------------------------
+   4. Navegación
+   ------------------------------------------------------------ */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,249,245,.92);
+  -webkit-backdrop-filter:saturate(150%) blur(10px);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav ul{
+  display:flex;gap:.15rem;overflow-x:auto;
+  padding-block:.45rem;margin:0;
+  scrollbar-width:none;
+}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{
+  display:block;white-space:nowrap;
+  font-size:.88rem;font-weight:600;color:var(--ink-soft);
+  padding:.5rem .78rem;border-radius:999px;
+}
+.nav a:hover{background:var(--accent-wash);color:var(--accent);text-decoration:none}
+.nav a[aria-current="true"]{background:var(--accent);color:#fff}
+
+/* ------------------------------------------------------------
+   5. Secciones
+   ------------------------------------------------------------ */
+main{padding-block:clamp(2.4rem,5vw,4rem)}
+.section{padding-block:clamp(2.1rem,4.5vw,3.4rem);border-top:1px solid var(--line-soft);scroll-margin-top:4.2rem}
+.section:first-of-type{border-top:0;padding-top:0}
+.section-head{margin-bottom:1.9rem}
+.section-head h2{
+  font-size:clamp(1.5rem,1.25rem + 1vw,2rem);
+  color:var(--ink);margin:0 0 .45rem;
+}
+.section-head h2::after{
+  content:"";display:block;width:52px;height:3px;
+  background:var(--accent-soft);margin-top:.65rem;border-radius:2px;
+}
+.section-head p{color:var(--ink-mute);font-size:.95rem;margin:.2rem 0 0;max-width:68ch}
+
+/* ------------------------------------------------------------
+   6. Tarjetas y bloques
+   ------------------------------------------------------------ */
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:clamp(1.15rem,2.4vw,1.6rem);
+  box-shadow:var(--shadow);
+}
+.prose{max-width:72ch}
+.prose p:last-child{margin-bottom:0}
+
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:0}
+.chip{
+  font-size:.79rem;font-weight:600;color:var(--accent);
+  background:var(--accent-wash);border:1px solid #D6E4E4;
+  padding:.3rem .72rem;border-radius:999px;
+}
+.chip-plain{background:#F4F2EC;border-color:#E4E0D6;color:var(--ink-soft)}
+
+/* Línea de tiempo (educación y experiencia) */
+.timeline{display:grid;gap:1.1rem;position:relative;margin:0}
+.tl-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(1.1rem,2.4vw,1.55rem);box-shadow:var(--shadow);
+  border-left:4px solid var(--accent-soft);
+}
+.tl-head{
+  display:flex;flex-wrap:wrap;align-items:baseline;
+  justify-content:space-between;gap:.35rem 1rem;margin-bottom:.55rem;
+}
+.tl-head h3{font-size:1.12rem;color:var(--ink)}
+.tl-org{
+  display:block;font-size:.93rem;font-weight:600;color:var(--accent);
+  margin-bottom:.15rem;
+}
+.tl-date{
+  font-family:var(--mono);font-size:.8rem;color:var(--ink-mute);
+  letter-spacing:.02em;white-space:nowrap;
+}
+.tl-role{font-size:.9rem;color:var(--ink-soft);font-weight:600;margin:0 0 .8rem}
+.bullets{display:grid;gap:.5rem;margin:.2rem 0 0}
+.bullets li{position:relative;padding-left:1.15rem;color:var(--ink-soft);font-size:.95rem}
+.bullets li::before{
+  content:"";position:absolute;left:0;top:.62em;
+  width:6px;height:6px;border-radius:50%;background:var(--accent-soft);
+}
+.note-inline{font-size:.85rem;color:var(--ink-mute);margin:.8rem 0 0}
+
+/* Rejillas */
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(min(100%,255px),1fr))}
+
+/* ------------------------------------------------------------
+   7. Habilidades
+   ------------------------------------------------------------ */
+.skill-block{margin-bottom:1.15rem}
+.skill-block:last-child{margin-bottom:0}
+.skill-block h3{
+  font-size:1.02rem;color:var(--ink);margin:0 0 .85rem;
+  padding-bottom:.5rem;border-bottom:1px solid var(--line-soft);
+}
+.lang-list{display:grid;gap:.75rem;margin:0}
+.lang-item{
+  display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:space-between;gap:.4rem 1rem;
+  padding:.6rem .85rem;background:#FAF9F5;
+  border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+}
+.lang-item strong{font-size:.95rem}
+.lang-detail{font-size:.85rem;color:var(--ink-mute)}
+.level-dots{display:flex;gap:.22rem;flex:none}
+.level-dots i{
+  width:.55rem;height:.55rem;border-radius:50%;
+  background:#DDE3E3;display:block;
+}
+.level-dots i.on{background:var(--accent-soft)}
+
+/* ------------------------------------------------------------
+   8. Formación: tarjetas con botón de credencial
+   ------------------------------------------------------------ */
+.training-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.t-card{
+  display:flex;flex-direction:column;gap:.65rem;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1.15rem 1.2rem 1.05rem;
+  box-shadow:var(--shadow);
+  transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;
+}
+.t-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);border-color:#CFDADB}
+.t-card h3{font-size:1.02rem;line-height:1.35;color:var(--ink)}
+.t-org{font-size:.87rem;font-weight:600;color:var(--accent);margin:0}
+.t-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;
+  font-size:.79rem;color:var(--ink-mute);margin:0;
+}
+.t-meta .dot{color:#C4CFD0}
+.t-detail{
+  font-size:.82rem;color:var(--ink-mute);margin:0;
+  padding-top:.15rem;border-top:1px dashed var(--line-soft);
+}
+.t-card .btn-cred{margin-top:auto}
+
+/* Botón "Ver credencial" */
+.btn-cred{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:.6rem;
+  width:100%;font-size:.85rem;font-weight:650;
+  color:var(--accent);background:var(--accent-wash);
+  border:1px solid #D3E2E2;border-radius:var(--radius-sm);
+  padding:.55rem .8rem;
+}
+.btn-cred:hover{background:#E2EDED;border-color:var(--accent-soft);text-decoration:none}
+.btn-cred .arrow{font-size:1rem;line-height:1}
+
+/* ------------------------------------------------------------
+   9. Eventos y artículos
+   ------------------------------------------------------------ */
+.list-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(1.1rem,2.4vw,1.5rem);box-shadow:var(--shadow);
+}
+.item{
+  display:grid;gap:.3rem;padding:1rem 0;
+  border-bottom:1px solid var(--line-soft);
+}
+.item:first-child{padding-top:0}
+.item:last-child{border-bottom:0;padding-bottom:0}
+.item h3{font-size:1.03rem;line-height:1.4}
+.item p{font-size:.88rem;color:var(--ink-mute);margin:0}
+.item .item-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem 1rem}
+.badge{
+  display:inline-block;font-size:.73rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#7A4E10;background:#FBF0DC;border:1px solid #EBD9B8;
+  padding:.18rem .55rem;border-radius:999px;white-space:nowrap;
+}
+.badge-soft{
+  color:var(--accent);background:var(--accent-wash);
+  border-color:#D6E4E4;letter-spacing:.04em;
+}
+
+/* ------------------------------------------------------------
+   10. Credenciales
+   ------------------------------------------------------------ */
+.cred-intro{
+  background:var(--accent-wash);border:1px solid #D8E6E6;
+  border-radius:var(--radius);padding:1.1rem 1.25rem;margin-bottom:1.6rem;
+  font-size:.93rem;color:var(--ink-soft);
+}
+.cred-intro p:last-child{margin-bottom:0}
+.cred-group{margin-bottom:2rem}
+.cred-group:last-child{margin-bottom:0}
+.cred-group > h3{
+  font-family:var(--sans);font-size:.78rem;font-weight:750;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);
+  margin:0 0 .85rem;
+}
+.cred-grid{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,268px),1fr))}
+.cred-card{
+  display:flex;flex-direction:column;gap:.55rem;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:1rem 1.05rem;
+  break-inside:avoid;
+}
+.cred-card h4{font-family:var(--serif);font-size:.98rem;line-height:1.35;margin:0}
+.cred-card .cred-org{font-size:.81rem;color:var(--accent);font-weight:600;margin:0}
+.cred-card .cred-year{font-family:var(--mono);font-size:.76rem;color:var(--ink-mute);margin:0}
+
+/* ------------------------------------------------------------
+   11. Contacto y pie
+   ------------------------------------------------------------ */
+.contact-card{
+  background:var(--accent);color:#F2F6F6;
+  border-radius:var(--radius);padding:clamp(1.5rem,3.4vw,2.4rem);
+}
+.contact-card h2{color:#fff;font-size:clamp(1.4rem,1.2rem + .9vw,1.85rem);margin:0 0 .5rem}
+.contact-card h2::after{display:none}
+.contact-lead{color:#CFE0E1;font-size:.96rem;max-width:56ch;margin:0 0 1.5rem}
+.contact-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));margin-bottom:1.6rem}
+.contact-item{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+  border-radius:var(--radius-sm);padding:.85rem 1rem;
+}
+.contact-item span{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#AFC9CB;margin-bottom:.25rem}
+.contact-item a,.contact-item p{color:#fff;font-size:.95rem;font-weight:600;margin:0;word-break:break-word}
+.contact-item a:hover{color:#fff}
+.contact-card .btn-primary{background:#fff;color:var(--accent)}
+.contact-card .btn-primary:hover{background:#EAF1F1}
+.contact-card .btn-ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.contact-card .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+footer{
+  border-top:1px solid var(--line);
+  background:#F4F1EA;
+  padding-block:1.7rem 2rem;
+  font-size:.84rem;color:var(--ink-mute);
+}
+.footer-inner{display:flex;flex-wrap:wrap;gap:.8rem 1.5rem;align-items:baseline;justify-content:space-between}
+.footer-note{max-width:60ch;margin:0}
+.footer-links{display:flex;gap:1.1rem;margin:0}
+.footer-links a{color:var(--ink-soft)}
+
+/* ------------------------------------------------------------
+   12. Estilos de impresión
+   ------------------------------------------------------------ */
+@media print{
+  :root{--shadow:none;--shadow-hover:none}
+  body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}
+  .nav,.skip,.hero-actions,.profiles,.btn{display:none !important}
+  .hero{background:#fff;border-bottom:1px solid #999}
+  .hero::before{display:none}
+  .hero-inner{padding-block:.6rem 1rem}
+  .contact-card{background:#fff;color:#000;border:1px solid #999;padding:1rem}
+  .contact-card h2,.contact-lead,.contact-item a,.contact-item p{color:#000}
+  .contact-item{background:#fff;border:1px solid #ccc}
+  .contact-item span{color:#444}
+  footer{background:#fff;border-top:1px solid #999}
+  .section{padding-block:1rem;border-top:1px solid #ddd;break-inside:avoid}
+  .tl-item,.t-card,.cred-card,.list-card{
+    box-shadow:none;border:1px solid #bbb;break-inside:avoid;page-break-inside:avoid;
+  }
+  .t-card:hover{transform:none}
+  /* En papel, la URL de verificación se imprime en texto plano */
+  .btn-cred::after{
+    content:" — " attr(href);
+    font-family:var(--mono);font-size:8pt;color:#333;font-weight:400;
+    word-break:break-all;
+  }
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#333}
+  .cred-group > h3{color:#000}
+}
+
+/* ------------------------------------------------------------
+   13. Ajustes móviles
+   ------------------------------------------------------------ */
+@media (max-width:640px){
+  .hero-inner{padding-block:2rem 1.6rem}
+  .meta-list{gap:.45rem .9rem;font-size:.9rem}
+  .btn{width:100%}
+  .hero-actions{gap:.55rem}
+  .tl-head{flex-direction:column;align-items:flex-start}
+  .section{scroll-margin-top:3.6rem}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+
+<!-- ============================================================
+     CABECERA
+     ============================================================ -->
+<header class="hero" id="inicio">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Portafolio profesional · Geografía y SIG</p>
+    <h1>Axel Bello Martínez</h1>
+    <p class="role">Licenciado en Geografía</p>
+    <p class="tagline">
+      Geógrafo con perfil técnico en sistemas de información geográfica, teledetección
+      y análisis geoespacial aplicado a entornos naturales y urbanos.
+    </p>
+
+    <ul class="meta-list">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Artemisa, Cuba</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 7 8.4 6 8.4-6"/></svg>
+        <a href="mailto:axelbellomartinez@gmail.com">axelbellomartinez@gmail.com</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6.5 3.5h3l1.3 4.2-2 1.4a13 13 0 0 0 6.1 6.1l1.4-2 4.2 1.3v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+        <a href="tel:+53555058490">(+53) 55 058490 <span style="color:#8B979B;font-weight:400">(opcional)</span></a>
+      </li>
+    </ul>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#credenciales">Ver credenciales</a>
+      <!-- Reemplaza [URL_CV_PDF] por el enlace público del CV en PDF -->
+      <a class="btn btn-ghost" href="[URL_CV_PDF]">Descargar CV en PDF</a>
+    </div>
+
+    <!-- Perfiles académicos y de código: reemplaza cada marcador por la URL real.
+         Si aún no tienes uno de estos perfiles, elimina el enlace correspondiente. -->
+    <ul class="profiles" aria-label="Perfiles profesionales y académicos">
+      <li>
+        <a href="[URL_LINKEDIN]" rel="me noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.06c.53-.95 1.83-1.95 3.76-1.95C21.3 8.75 22 11 22 14.1V21h-4v-6.1c0-1.46-.03-3.34-2.04-3.34-2.04 0-2.35 1.6-2.35 3.24V21h-4z"/></svg>
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="[URL_ORCID]" rel="me noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-2.3 5.2a1.1 1.1 0 1 1 2.2 0 1.1 1.1 0 0 1-2.2 0ZM9.4 9.6h1.9v8.2H9.4zm4.3 0h4.1c2.6 0 4.3 1.7 4.3 4.1s-1.7 4.1-4.3 4.1h-4.1zm1.9 1.6v5h2.1c1.6 0 2.5-1 2.5-2.5s-.9-2.5-2.5-2.5z"/></svg>
+          ORCID
+        </a>
+      </li>
+      <li>
+        <a href="[URL_GITHUB]" rel="me noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============================================================
+     NAVEGACIÓN POR ANCLAS
+     ============================================================ -->
+<nav class="nav" aria-label="Navegación principal">
+  <div class="wrap">
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#credenciales">Credenciales</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="contenido">
+<div class="wrap">
+
+  <!-- ==========================================================
+       SOBRE MÍ
+       ========================================================== -->
+  <section class="section" id="sobre-mi" aria-labelledby="h-sobre-mi">
+    <div class="section-head">
+      <h2 id="h-sobre-mi">Sobre mí</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="prose">
+        <p>
+          Soy licenciado en Geografía por la Universidad de La Habana, con formación en
+          ordenamiento territorial y medio ambiente y experiencia en sistemas de información
+          geográfica, teledetección, cartografía y análisis geoespacial aplicados a entornos
+          naturales y urbanos.
+        </p>
+        <p>
+          Trabajo con disciplina y organización, mantengo una ética de trabajo y un sentido de
+          la responsabilidad claros, y planifico de forma eficiente. Me adapto con facilidad a
+          los cambios, aporto un enfoque analítico y cuido el detalle. Disfruto del trabajo en
+          equipo y del aprendizaje continuo.
+        </p>
+      </div>
+      <div class="card">
+        <div class="skill-block">
+          <h3>Cualidades de trabajo</h3>
+          <ul class="chips">
+            <li class="chip">Disciplina</li>
+            <li class="chip">Organización</li>
+            <li class="chip">Ética de trabajo</li>
+            <li class="chip">Responsabilidad</li>
+            <li class="chip">Planificación eficiente</li>
+            <li class="chip">Trabajo en equipo</li>
+            <li class="chip">Adaptación al cambio</li>
+            <li class="chip">Enfoque analítico</li>
+            <li class="chip">Atención al detalle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       EDUCACIÓN
+       ========================================================== -->
+  <section class="section" id="educacion" aria-labelledby="h-educacion">
+    <div class="section-head">
+      <h2 id="h-educacion">Educación</h2>
+      <p>Formación de grado en Geografía, con reconocimientos académicos y trabajo de diploma.</p>
+    </div>
+
+    <div class="timeline">
+      <article class="tl-item">
+        <div class="tl-head">
+          <div>
+            <h3>Licenciatura en Geografía</h3>
+            <span class="tl-org">Universidad de La Habana · La Habana, Cuba</span>
+          </div>
+          <span class="tl-date">2021–2024</span>
+        </div>
+        <p class="tl-role">Promedio de calificaciones: 4.20 / 5.00</p>
+        <ul class="bullets">
+          <li>Estudiante Integral Destacado del Curso.</li>
+          <li>Estudiante Destacado en Cultura.</li>
+          <li>Líder de equipo en trabajo de campo.</li>
+          <li>Capitán del equipo de balonmano de la Facultad de Geografía.</li>
+        </ul>
+        <p class="note-inline">Título expedido el 3 de octubre de 2024.</p>
+        <!-- Reemplaza por la URL de verificación del título -->
+        <p style="margin:.9rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_TITULO]"><span>Ver credencial del título</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-head">
+          <div>
+            <h3>Trabajo de Diploma</h3>
+            <span class="tl-org">Facultad de Geografía · Universidad de La Habana</span>
+          </div>
+          <span class="tl-date">2024</span>
+        </div>
+        <p class="tl-role">«Estrategia para la rehabilitación de la playa El Salado en la provincia Artemisa, Cuba»</p>
+        <p class="note-inline">Investigación de culminación de estudios de la Licenciatura en Geografía.</p>
+        <!-- Reemplaza por la URL de verificación o del repositorio del trabajo de diploma -->
+        <p style="margin:.9rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_TRABAJO_DIPLOMA]"><span>Ver credencial del trabajo de diploma</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       EXPERIENCIA
+       ========================================================== -->
+  <section class="section" id="experiencia" aria-labelledby="h-experiencia">
+    <div class="section-head">
+      <h2 id="h-experiencia">Experiencia</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="tl-item">
+        <div class="tl-head">
+          <div>
+            <h3>Instituto de Geografía Tropical</h3>
+            <span class="tl-org">Departamento de Geomática · La Habana, Cuba</span>
+          </div>
+          <span class="tl-date">2025</span>
+        </div>
+        <p class="tl-role">Adiestrado</p>
+        <ul class="bullets">
+          <li>Manejo de SIG (QGIS, ArcGIS) y procesamiento de imágenes de percepción remota para el análisis geoespacial.</li>
+          <li>Elaboración de productos cartográficos y modelación espacial de entornos naturales y urbanos.</li>
+          <li>Gestión de proyectos y trabajo colaborativo en equipos multidisciplinarios.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-head">
+          <div>
+            <h3>Servicio Ambiental</h3>
+            <span class="tl-org">Zona Especial de Desarrollo Mariel · Cuba</span>
+          </div>
+          <span class="tl-date">2026</span>
+        </div>
+        <p class="tl-role">Servicio ambiental</p>
+        <ul class="bullets">
+          <li>Trabajo vinculado al ámbito ambiental en la Zona Especial de Desarrollo Mariel.</li>
+        </ul>
+        <p class="note-inline">Detalle de funciones: [No especificado en la documentación disponible].</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HABILIDADES
+       ========================================================== -->
+  <section class="section" id="habilidades" aria-labelledby="h-habilidades">
+    <div class="section-head">
+      <h2 id="h-habilidades">Habilidades</h2>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="skill-block">
+          <h3>Habilidades profesionales</h3>
+          <ul class="chips">
+            <li class="chip">Desarrollo territorial y urbano</li>
+            <li class="chip">Medio ambiente</li>
+            <li class="chip">Responsabilidad en el trabajo</li>
+            <li class="chip">Capacidad de autoaprendizaje</li>
+            <li class="chip">Trabajo en equipo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-block">
+          <h3>Habilidades digitales y técnicas</h3>
+          <ul class="chips">
+            <li class="chip">Paquete de Microsoft Office</li>
+            <li class="chip">QGIS, ArcGIS y otras herramientas SIG</li>
+            <li class="chip">Herramientas de Google</li>
+            <li class="chip">HTML, JavaScript y Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-block" style="margin-bottom:0">
+          <h3>Idiomas</h3>
+          <ul class="lang-list">
+            <li class="lang-item">
+              <div>
+                <strong>Español</strong>
+                <div class="lang-detail">Nativo</div>
+              </div>
+              <div class="level-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+            </li>
+            <li class="lang-item">
+              <div>
+                <strong>Inglés · A2</strong>
+                <div class="lang-detail">Certificado, Marco Común Europeo, 2024</div>
+              </div>
+              <div class="level-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+            </li>
+            <li class="lang-item">
+              <div>
+                <strong>Inglés · B1</strong>
+                <div class="lang-detail">Sin certificación</div>
+              </div>
+              <div class="level-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            </li>
+          </ul>
+          <!-- Reemplaza por la URL de verificación del diploma de inglés -->
+          <p style="margin:.9rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_INGLES_A2]"><span>Ver credencial de inglés A2</span><span class="arrow" aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FORMACIÓN: POSTGRADOS, TALLERES Y CURSOS EXTRAS
+       ========================================================== -->
+  <section class="section" id="formacion" aria-labelledby="h-formacion">
+    <div class="section-head">
+      <h2 id="h-formacion">Formación</h2>
+      <p>Postgrados, talleres y cursos de superación. Cada tarjeta enlaza a su credencial verificable.</p>
+    </div>
+
+    <div class="training-grid">
+      <!-- 1. QGIS Avanzado -->
+      <article class="t-card">
+        <h3>QGIS Avanzado: Análisis y Procesamiento Espacial</h3>
+        <p class="t-org">Museo Nacional de Historia Natural de Cuba</p>
+        <p class="t-meta"><span>2024</span><span class="dot">·</span><span>20 h</span><span class="dot">·</span><span>2 créditos</span></p>
+        <p class="t-detail">Posgrado. La Habana, 5 al 26 de abril de 2024. Clasificación E.</p>
+        <!-- Reemplaza por la URL de verificación del posgrado -->
+        <a class="btn-cred" href="[URL_VERIFICACION_QGIS_AVANZADO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 2. Paleontología -->
+      <article class="t-card">
+        <h3>Fundamentos básicos de Paleontología</h3>
+        <p class="t-org">Museo Nacional de Historia Natural de Cuba</p>
+        <p class="t-meta"><span>2024</span><span class="dot">·</span><span>44 h</span></p>
+        <p class="t-detail">Curso de superación. 14 al 16 de mayo de 2024. Clasificación E.</p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_PALEONTOLOGIA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 3. Redacción de artículos científicos -->
+      <article class="t-card">
+        <h3>Curso de Invierno de Redacción de Artículos Científicos</h3>
+        <p class="t-org">Escuela Internacional de Invierno · Fundación Universitaria de Innovación y Desarrollo, Universidad de La Habana</p>
+        <p class="t-meta"><span>2025</span><span class="dot">·</span><span>2 créditos</span></p>
+        <p class="t-detail">Certificado: 6 al 24 de enero de 2025.</p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_REDACCION_CIENTIFICA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 4. Inundaciones pluviales extremas -->
+      <article class="t-card">
+        <h3>Inundaciones pluviales extremas en América Latina y el Caribe: ejemplos en Chetumal (México) y La Habana</h3>
+        <p class="t-org">Universidad de La Habana · Facultad de Geografía</p>
+        <p class="t-meta"><span>2024</span><span class="dot">·</span><span>60 h</span><span class="dot">·</span><span>2 créditos</span></p>
+        <p class="t-detail">Educación de Posgrado. 13 al 15 de noviembre de 2024.</p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_INUNDACIONES]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 5. Manejo de Software SIG -->
+      <article class="t-card">
+        <h3>Manejo de Software SIG</h3>
+        <p class="t-org">[Institución no especificada]</p>
+        <p class="t-meta"><span>[Año no especificado]</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_SIG_BASICO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 6. Percepción remota y análisis geoespacial -->
+      <article class="t-card">
+        <h3>Procesamiento de imágenes de percepción remota y análisis geoespacial</h3>
+        <p class="t-org">[Institución no especificada]</p>
+        <p class="t-meta"><span>[Año no especificado]</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_PERCEPCION_REMOTA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 7. Radar + IA aplicada a SIG -->
+      <article class="t-card">
+        <h3>Procesamiento de imágenes satelitales de Radar integrando IA a Sistemas de Información Geográfica (SIG)</h3>
+        <p class="t-org">XI Convención AGRIMENSURA CUBA</p>
+        <p class="t-meta"><span>2025</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_RADAR_IA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 8. XI Convención AGRIMENSURA CUBA -->
+      <article class="t-card">
+        <h3>XI Convención AGRIMENSURA CUBA</h3>
+        <p class="t-org">XI Convención AGRIMENSURA CUBA</p>
+        <p class="t-meta"><span>2025</span><span class="dot">·</span><span>Convención científica</span></p>
+        <!-- Reemplaza por la URL de verificación de la participación -->
+        <a class="btn-cred" href="[URL_VERIFICACION_AGRIMENSURA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 9. Proyecto de acompañamiento del proceso inversionista -->
+      <article class="t-card">
+        <h3>Proyecto de acompañamiento del proceso inversionista en el rescate del patrimonio natural y construido en la zona costera</h3>
+        <p class="t-org">Universidad de La Habana · Proyecto académico</p>
+        <p class="t-meta"><span>2022–2024</span></p>
+        <!-- Reemplaza por la URL de verificación o documentación del proyecto -->
+        <a class="btn-cred" href="[URL_VERIFICACION_PROYECTO_PATRIMONIO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 10. Productos cartográficos y modelación espacial -->
+      <article class="t-card">
+        <h3>Elaboración de productos cartográficos y modelación espacial aplicada a entornos naturales y urbanos</h3>
+        <p class="t-org">[Institución no especificada]</p>
+        <p class="t-meta"><span>[Año no especificado]</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_PRODUCTOS_CARTOGRAFICOS]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 11. Gestión de proyectos -->
+      <article class="t-card">
+        <h3>Gestión de proyectos y trabajo colaborativo en equipos multidisciplinarios dedicados a la innovación y desarrollo de las ciencias geográficas</h3>
+        <p class="t-org">[Institución no especificada]</p>
+        <p class="t-meta"><span>[Año no especificado]</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_GESTION_PROYECTOS]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <!-- 12. Desarrollo con IA -->
+      <article class="t-card">
+        <h3>Curso de Desarrollo con IA, El Nuevo Programador</h3>
+        <p class="t-org">BIG school</p>
+        <p class="t-meta"><span>2026</span></p>
+        <!-- Reemplaza por la URL de verificación del curso -->
+        <a class="btn-cred" href="[URL_VERIFICACION_DESARROLLO_IA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <!-- Cursos extras -->
+    <div class="cred-group" style="margin-top:2.2rem">
+      <h3>Cursos extras</h3>
+      <div class="training-grid">
+        <article class="t-card">
+          <h3>Introducción a la Espeleología</h3>
+          <p class="t-org">Sociedad Espeleológica de Cuba · Centro Nacional de Entrenamiento Espeleológico «Antonio Núñez Jiménez»</p>
+          <p class="t-meta"><span>2023</span></p>
+          <p class="t-detail">Certificado: 29 de julio de 2023.</p>
+          <!-- Reemplaza por la URL de verificación del curso -->
+          <a class="btn-cred" href="[URL_VERIFICACION_INTRO_ESPELEOLOGIA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="t-card">
+          <h3>Curso Básico de Espeleología</h3>
+          <p class="t-org">Sociedad Espeleológica de Cuba · Centro Nacional de Entrenamiento Espeleológico «Antonio Núñez Jiménez»</p>
+          <p class="t-meta"><span>2025</span></p>
+          <p class="t-detail">Certificado «Nivel Básico de Espeleología»: 1 de mayo de 2025.</p>
+          <!-- Reemplaza por la URL de verificación del curso -->
+          <a class="btn-cred" href="[URL_VERIFICACION_ESPELEOLOGIA_BASICA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       EVENTOS CIENTÍFICOS
+       ========================================================== -->
+  <section class="section" id="eventos" aria-labelledby="h-eventos">
+    <div class="section-head">
+      <h2 id="h-eventos">Eventos científicos</h2>
+    </div>
+
+    <div class="list-card">
+      <div class="item">
+        <div class="item-top">
+          <h3>II Simposio de Geografía, Medio Ambiente y Ordenamiento Territorial</h3>
+          <span class="tl-date">2025</span>
+        </div>
+        <p>Facultad de Geografía, Universidad de La Habana</p>
+        <!-- Reemplaza por la URL de verificación de la participación -->
+        <p style="margin:.6rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_SIMPOSIO_GEOGRAFIA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <h3>Jornada Científica de la Facultad de Geografía</h3>
+          <span class="tl-date">2023 y 2024</span>
+        </div>
+        <p>Facultad de Geografía, Universidad de La Habana</p>
+        <!-- Reemplaza por la URL de verificación de la participación -->
+        <p style="margin:.6rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_JORNADA_CIENTIFICA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       ARTÍCULOS
+       ========================================================== -->
+  <section class="section" id="articulos" aria-labelledby="h-articulos">
+    <div class="section-head">
+      <h2 id="h-articulos">Artículos</h2>
+      <p>Trabajos académicos y publicaciones en preparación. El estado editorial se indica en cada entrada.</p>
+    </div>
+
+    <div class="list-card">
+      <div class="item">
+        <div class="item-top">
+          <h3>«Inundaciones Urbanas por Lluvia en América Latina y el Caribe: Ejemplos en Chetumal (México) y La Habana (Cuba)»</h3>
+          <span class="tl-date">2024</span>
+        </div>
+        <p>Facultad de Geografía, Universidad de La Habana</p>
+        <!-- Reemplaza por la URL del artículo o de su ficha de verificación -->
+        <p style="margin:.6rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_ARTICULO_INUNDACIONES_URBANAS]"><span>Ver referencia</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <h3>«Evolución del espacio físico-urbano de La Habana de los años 2020 al 2025»</h3>
+          <span class="badge">En edición · Primer autor</span>
+        </div>
+        <p>Estado editorial: en edición. Autoría: primer autor.</p>
+        <!-- Reemplaza por la URL del artículo cuando esté disponible -->
+        <p style="margin:.6rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_ARTICULO_ESPACIO_URBANO]"><span>Ver referencia</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-top">
+          <h3>«Inundaciones costeras asociadas a fenómenos meteorológicos. Estudio de caso, Malecón del Vedado»</h3>
+          <span class="badge">En edición · Segundo autor</span>
+        </div>
+        <p>Estado editorial: en edición. Autoría: segundo autor.</p>
+        <!-- Reemplaza por la URL del artículo cuando esté disponible -->
+        <p style="margin:.6rem 0 0"><a class="btn-cred" href="[URL_VERIFICACION_ARTICULO_INUNDACIONES_COSTERAS]"><span>Ver referencia</span><span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CREDENCIALES Y VERIFICACIÓN
+       ========================================================== -->
+  <section class="section" id="credenciales" aria-labelledby="h-credenciales">
+    <div class="section-head">
+      <h2 id="h-credenciales">Credenciales y verificación</h2>
+    </div>
+
+    <div class="cred-intro">
+      <p>
+        Cada botón «Ver credencial» enlaza al documento o a la página oficial que acredita el
+        título, curso, taller o reconocimiento correspondiente. Esta sección reúne en un solo
+        lugar la formación y los reconocimientos que aparecen en el currículum, para que puedan
+        comprobarse de forma directa.
+      </p>
+    </div>
+
+    <!-- GRADO -->
+    <div class="cred-group">
+      <h3>Formación de grado</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>Licenciado en Geografía</h4>
+          <p class="cred-org">Universidad de La Habana</p>
+          <p class="cred-year">2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_TITULO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Trabajo de Diploma: «Estrategia para la rehabilitación de la playa El Salado en la provincia Artemisa, Cuba»</h4>
+          <p class="cred-org">Facultad de Geografía, Universidad de La Habana</p>
+          <p class="cred-year">2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_TRABAJO_DIPLOMA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <!-- URL REAL extraída de la carpeta (apost_titulo_axel.pdf).
+             Portal de consulta de legalizaciones: se verifica con el código indicado. -->
+        <article class="cred-card">
+          <h4>Legalización del título de Licenciado en Geografía</h4>
+          <p class="cred-org">DACCRE · Ministerio de Relaciones Exteriores de Cuba</p>
+          <p class="cred-year">2026 · Legalización n.º 115658 · Código 7C8454FBC5</p>
+          <a class="btn-cred" href="https://tramites.minrel.gov.cl/consultalegalizacion"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- URL REAL extraída de la carpeta (img20260810_15321907.pdf).
+             Portal de consulta de legalizaciones: se verifica con el código indicado. -->
+        <article class="cred-card">
+          <h4>Legalización del certificado de estudios de la licenciatura</h4>
+          <p class="cred-org">DACCRE · Ministerio de Relaciones Exteriores de Cuba</p>
+          <p class="cred-year">2026 · Legalización n.º 115657 · Código 1741741D1D</p>
+          <a class="btn-cred" href="https://tramites.minrel.gov.cl/consultalegalizacion"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="cred-card">
+          <h4>Declaración de equivalencia de la nota media del expediente académico</h4>
+          <p class="cred-org">Ministerio de Universidades · España</p>
+          <p class="cred-year">2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_EQUIVALENCIA_NOTAS]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- POSTGRADOS Y CURSOS -->
+    <div class="cred-group">
+      <h3>Postgrados, talleres y cursos</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>QGIS Avanzado: Análisis y Procesamiento Espacial</h4>
+          <p class="cred-org">Museo Nacional de Historia Natural de Cuba</p>
+          <p class="cred-year">2024 · 20 h · 2 créditos</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_QGIS_AVANZADO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Fundamentos básicos de Paleontología</h4>
+          <p class="cred-org">Museo Nacional de Historia Natural de Cuba</p>
+          <p class="cred-year">2024 · 44 h</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_PALEONTOLOGIA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Curso de Invierno de Redacción de Artículos Científicos</h4>
+          <p class="cred-org">Escuela Internacional de Invierno · Universidad de La Habana</p>
+          <p class="cred-year">2025 · 2 créditos</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_REDACCION_CIENTIFICA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Inundaciones pluviales extremas en América Latina y el Caribe</h4>
+          <p class="cred-org">Facultad de Geografía, Universidad de La Habana</p>
+          <p class="cred-year">2024 · 60 h · 2 créditos</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_INUNDACIONES]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Manejo de Software SIG</h4>
+          <p class="cred-org">[Institución no especificada]</p>
+          <p class="cred-year">[No especificado]</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_SIG_BASICO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Procesamiento de imágenes de percepción remota y análisis geoespacial</h4>
+          <p class="cred-org">[Institución no especificada]</p>
+          <p class="cred-year">[No especificado]</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_PERCEPCION_REMOTA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Procesamiento de imágenes satelitales de Radar integrando IA a SIG</h4>
+          <p class="cred-org">XI Convención AGRIMENSURA CUBA</p>
+          <p class="cred-year">2025</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_RADAR_IA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Elaboración de productos cartográficos y modelación espacial</h4>
+          <p class="cred-org">[Institución no especificada]</p>
+          <p class="cred-year">[No especificado]</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_PRODUCTOS_CARTOGRAFICOS]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Gestión de proyectos y trabajo colaborativo en equipos multidisciplinarios</h4>
+          <p class="cred-org">[Institución no especificada]</p>
+          <p class="cred-year">[No especificado]</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_GESTION_PROYECTOS]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Curso de Desarrollo con IA, El Nuevo Programador</h4>
+          <p class="cred-org">BIG school</p>
+          <p class="cred-year">2026</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_DESARROLLO_IA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Proyecto de acompañamiento del proceso inversionista en el rescate del patrimonio natural y construido en la zona costera</h4>
+          <p class="cred-org">Universidad de La Habana</p>
+          <p class="cred-year">2022–2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_PROYECTO_PATRIMONIO]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- CONVENCIÓN -->
+    <div class="cred-group">
+      <h3>Convención científica</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>XI Convención AGRIMENSURA CUBA</h4>
+          <p class="cred-org">XI Convención AGRIMENSURA CUBA</p>
+          <p class="cred-year">2025</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_AGRIMENSURA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- CURSOS EXTRAS -->
+    <div class="cred-group">
+      <h3>Cursos extras</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>Introducción a la Espeleología</h4>
+          <p class="cred-org">Sociedad Espeleológica de Cuba · CENEP «Antonio Núñez Jiménez»</p>
+          <p class="cred-year">2023</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_INTRO_ESPELEOLOGIA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Curso Básico de Espeleología</h4>
+          <p class="cred-org">Sociedad Espeleológica de Cuba · CENEP «Antonio Núñez Jiménez»</p>
+          <p class="cred-year">2025</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_ESPELEOLOGIA_BASICA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- IDIOMAS -->
+    <div class="cred-group">
+      <h3>Idiomas</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>Diploma de certificación del nivel de dominio del idioma inglés · A2</h4>
+          <p class="cred-org">Centro de Idiomas, Universidad de La Habana</p>
+          <p class="cred-year">2024 · Marco Común Europeo</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_INGLES_A2]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- RECONOCIMIENTOS -->
+    <div class="cred-group">
+      <h3>Reconocimientos</h3>
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h4>Reconocimiento como Estudiante Integral más destacado</h4>
+          <p class="cred-org">Facultad de Geografía, Universidad de La Habana</p>
+          <p class="cred-year">2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_RECONOCIMIENTO_INTEGRAL]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="cred-card">
+          <h4>Reconocimiento como Estudiante Integral destacado en Cultura</h4>
+          <p class="cred-org">Facultad de Geografía, Universidad de La Habana</p>
+          <p class="cred-year">2024</p>
+          <a class="btn-cred" href="[URL_VERIFICACION_RECONOCIMIENTO_CULTURA]"><span>Ver credencial</span><span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CONTACTO
+       ========================================================== -->
+  <section class="section" id="contacto" aria-labelledby="h-contacto">
+    <div class="contact-card">
+      <h2 id="h-contacto">Contacto</h2>
+      <p class="contact-lead">
+        Disponible para colaborar en proyectos de SIG, teledetección, cartografía y análisis
+        territorial, así como en equipos de investigación y consultoría ambiental.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span>Correo electrónico</span>
+          <a href="mailto:axelbellomartinez@gmail.com">axelbellomartinez@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>Teléfono (opcional)</span>
+          <a href="tel:+53555058490">(+53) 55 058490</a>
+        </div>
+        <div class="contact-item">
+          <span>Ubicación</span>
+          <p>Artemisa, Cuba</p>
+        </div>
+      </div>
+
+      <div class="hero-actions" style="margin-bottom:0">
+        <!-- Reemplaza [URL_CV_PDF] por el enlace público del CV en PDF -->
+        <a class="btn btn-primary" href="[URL_CV_PDF]">Descargar CV en PDF</a>
+        <a class="btn btn-ghost" href="#inicio">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p class="footer-note">
+      Portafolio de credenciales. La información corresponde al CV de Axel Bello Martínez.
+    </p>
+    <ul class="footer-links">
+      <li><a href="mailto:axelbellomartinez@gmail.com">Correo</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+/* Resalta en la navegación la sección visible. Sin dependencias.
+   Si el navegador no admite IntersectionObserver, la navegación sigue funcionando. */
+(function () {
+  "use strict";
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  if (!links.length) return;
+
+  var map = {};
+  links.forEach(function (a) {
+    map[a.getAttribute('href').slice(1)] = a;
+  });
+
+  function setCurrent(id) {
+    links.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + id) {
+        a.setAttribute('aria-current', 'true');
+      } else {
+        a.removeAttribute('aria-current');
+      }
+    });
+  }
+
+  if (!('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting && map[entry.target.id]) {
+        setCurrent(entry.target.id);
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+  Object.keys(map).forEach(function (id) {
+    var section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+})();
+</script>
+
+<!-- Datos estructurados para buscadores. Sustituye los marcadores al publicar. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Axel Bello Martínez",
+  "jobTitle": "Licenciado en Geografía",
+  "email": "mailto:axelbellomartinez@gmail.com",
+  "telephone": "+53555058490",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Artemisa",
+    "addressCountry": "CU"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad de La Habana"
+  },
+  "knowsAbout": ["Sistemas de Información Geográfica", "Teledetección", "Análisis geoespacial", "Cartografía", "Medio ambiente"],
+  "knowsLanguage": ["es", "en"],
+  "sameAs": ["[URL_LINKEDIN]", "[URL_ORCID]", "[URL_GITHUB]"]
+}
+</script>
+</body>
+</html>
