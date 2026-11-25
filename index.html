@@ -166,13 +166,6 @@ strong{font-weight:650}
 }
 .doc-count svg{width:1em;height:1em;flex:none;color:var(--accent-soft)}
 .doc-count b{color:var(--accent);font-weight:700}
-/* Estado «documento pendiente»: nunca un enlace roto */
-.doc-pending{
-  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;width:100%;
-  margin-top:auto;font-size:.82rem;font-weight:650;
-  color:#6B4A14;background:var(--amber-wash);
-  border:1px dashed var(--amber-line);border-radius:var(--radius-sm);padding:.55rem .8rem;
-}
 
 /* ------------------------------------------------------------
    4. Navegación
@@ -457,7 +450,7 @@ footer{
 
     <p class="doc-count">
       <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-      <span><b>15 documentos</b> disponibles para consulta directa</span>
+      <span><b>16 documentos</b> disponibles para consulta directa</span>
     </p>
   </div>
 </header>
@@ -771,19 +764,13 @@ footer{
       </article>
 
       <article class="t-card">
-        <h3>Curso de Desarrollo con IA, El Nuevo Programador</h3>
-        <p class="t-org">BIG school</p>
-        <p class="t-meta"><span>2026</span></p>
-        <p class="t-detail">Certificado en incorporación: se añadirá en las próximas horas.</p>
-        <!-- PENDIENTE (mañana): guarda el diploma con el nombre
-             16-curso-desarrollo-ia-2026.pdf y sustituye el bloque
-             <span class="doc-pending"> de abajo por un botón «Ver documento» que
-             apunte a ese archivo (el código exacto está en README.md, apartado 4).
-             Después cambia «15 documentos» por «16 documentos» en la cabecera. -->
-        <span class="doc-pending">
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          Documento pendiente
-        </span>
+        <h3>Curso de Iniciación al Desarrollo con IA</h3>
+        <p class="t-org">mouredev · BIG school</p>
+        <p class="t-meta"><span>2026</span><span class="dot">·</span><span>4 h</span></p>
+        <p class="t-detail">Certificado de asistencia · 24 de noviembre de 2026</p>
+        <a class="btn-doc" href="16-desarrollo-IA-2026.pdf" target="_blank" rel="noopener">
+          <span>Ver documento</span><span class="ext">PDF</span>
+        </a>
       </article>
     </div>
 
@@ -977,6 +964,15 @@ footer{
           <p class="cred-org">Facultad de Geografía, Universidad de La Habana</p>
           <p class="cred-year">2024 · 60 h · 2 créditos</p>
           <a class="btn-doc" href="06-inundaciones-pluviales-2024.pdf" target="_blank" rel="noopener">
+            <span>Ver documento</span><span class="ext">PDF</span>
+          </a>
+        </article>
+
+        <article class="cred-card">
+          <h4>Curso de Iniciación al Desarrollo con IA</h4>
+          <p class="cred-org">mouredev · BIG school</p>
+          <p class="cred-year">2026 · 4 h · Certificado de asistencia</p>
+          <a class="btn-doc" href="16-desarrollo-IA-2026.pdf" target="_blank" rel="noopener">
             <span>Ver documento</span><span class="ext">PDF</span>
           </a>
         </article>
